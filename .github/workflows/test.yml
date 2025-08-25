@@ -13,7 +13,7 @@ on:
 
 env:
   CI_BRANCH: ${{ github.head_ref || github.ref_name }}
-  GITHUB_REPOSITORY: $GITHUB_REPOSITORY
+  GITHUB_REPOSITORY: ${{ github.repository }}
 
 jobs:
   test:
