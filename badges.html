@@ -1,59 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Simple Dashboard Table</title>
-  <style>
-    table {
-      border-collapse: separate;
-      border-spacing: 1px;
-      margin: 20px auto;
-    }
-    td {
-      width: 120px;
-      height: 80px;
-      text-align: center;
-      vertical-align: middle;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      background-clip: padding-box;
-    }
-    .red    { background-color: #e74c3c; }
-    .green  { background-color: #27ae60; }
-    .blue   { background-color: #2980b9; }
-    .orange { background-color: #e67e22; }
-    .purple { background-color: #8e44ad; }
-  </style>
-</head>
-<body style="background-color: #fff;">
-  <table>
-    <tr>
-      <td class="red">Cell 1</td>
-      <td class="green">Cell 2</td>
-      <td class="blue">Cell 3</td>
-    </tr>
-    <tr>
-      <td class="orange">Cell 4</td>
-      <td class="purple">Cell 5</td>
-      <td class="red">Cell 6</td>
-    </tr>
-    <tr>
-      <td class="green">Cell 7</td>
-      <td class="blue">Cell 8</td>
-      <td class="orange">Cell 9</td>
-    </tr>
-    <tr>
-      <td class="purple">Cell 10</td>
-      <td class="red">Cell 11</td>
-      <td class="green">Cell 12</td>
-    </tr>
-    <tr>
-      <td class="blue">Cell 13</td>
-      <td class="orange">Cell 14</td>
-      <td class="purple">Cell 15</td>
-    </tr>
-  </table>
-</body>
-</html>
+
+<svg width="360" height="400" viewBox="0 0 360 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Row 1 -->
+  <rect x="0"   y="0"   width="120" height="80" fill="#e74c3c"/>
+  <rect x="120" y="0"   width="120" height="80" fill="#27ae60"/>
+  <rect x="240" y="0"   width="120" height="80" fill="#2980b9"/>
+  <text x="60"   y="45" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 1</text>
+  <text x="180"  y="45" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 2</text>
+  <text x="300"  y="45" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 3</text>
+  <!-- Row 2 -->
+  <rect x="0"   y="80"  width="120" height="80" fill="#e67e22"/>
+  <rect x="120" y="80"  width="120" height="80" fill="#8e44ad"/>
+  <rect x="240" y="80"  width="120" height="80" fill="#e74c3c"/>
+  <text x="60"   y="125" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 4</text>
+  <text x="180"  y="125" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 5</text>
+  <text x="300"  y="125" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 6</text>
+  <!-- Row 3 -->
+  <rect x="0"   y="160" width="120" height="80" fill="#27ae60"/>
+  <rect x="120" y="160" width="120" height="80" fill="#2980b9"/>
+  <rect x="240" y="160" width="120" height="80" fill="#e67e22"/>
+  <text x="60"   y="205" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 7</text>
+  <text x="180"  y="205" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 8</text>
+  <text x="300"  y="205" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 9</text>
+  <!-- Row 4 -->
+  <rect x="0"   y="240" width="120" height="80" fill="#8e44ad"/>
+  <rect x="120" y="240" width="120" height="80" fill="#e74c3c"/>
+  <rect x="240" y="240" width="120" height="80" fill="#27ae60"/>
+  <text x="60"   y="285" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 10</text>
+  <text x="180"  y="285" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 11</text>
+  <text x="300"  y="285" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 12</text>
+  <!-- Row 5 -->
+  <rect x="0"   y="320" width="120" height="80" fill="#2980b9"/>
+  <rect x="120" y="320" width="120" height="80" fill="#e67e22"/>
+  <rect x="240" y="320" width="120" height="80" fill="#8e44ad"/>
+  <text x="60"   y="365" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 13</text>
+  <text x="180"  y="365" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 14</text>
+  <text x="300"  y="365" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">Cell 15</text>
+</svg>
