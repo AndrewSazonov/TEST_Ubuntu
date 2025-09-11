@@ -19,5 +19,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Add dashboard from file
-        run: cat badges.html >> $GITHUB_STEP_SUMMARY        
+      - name: Generate dashboard SVG
+        run: |
+          echo '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /></svg>' > dashboard.svg
+
+      - name: Encode and add dashboard to summary
+        run: |
+          echo "![Dashboard](data:image/svg+xml;base64,$(base64 -w 0 dashboard.svg))" >> $GITHUB_STEP_SUMMARY        
