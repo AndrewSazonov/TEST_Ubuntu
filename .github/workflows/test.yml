@@ -21,7 +21,7 @@ jobs:
       - name: Prepare publish directory
         run: |
           mkdir -p _dashboard_publish/diffraction-lib/${{ github.ref_name }}
-          cp dashboard.svg _dashboard_publish/diffraction-lib/${{ github.ref_name }}/
+          cp index.html _dashboard_publish/diffraction-lib/${{ github.ref_name }}/
 
       - name: Publish to easyscience/dashboard master branch
         uses: peaceiris/actions-gh-pages@v3
@@ -34,4 +34,4 @@ jobs:
 
       - name: Add dashboard to summary
         run: |
-          echo "![Dashboard link](https://easyscience.github.io/dashboard/diffraction-lib/${{ github.ref_name }}/dashboard.html)"
+          echo "![Dashboard link](https://easyscience.github.io/dashboard/diffraction-lib/${{ github.ref_name }}/index.html)"
